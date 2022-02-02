@@ -1,2 +1,2 @@
 # eigenmaps
-Startup Project
+Startup Django Project
