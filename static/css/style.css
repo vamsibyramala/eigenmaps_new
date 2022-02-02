@@ -1,0 +1,277 @@
+body{
+    background-color: #300532;
+    margin: 0;
+    font-family: 'Roboto';
+    font-size:15px;
+}
+.mininav{
+    background-color: #0F0E0E;
+    color: #F6DEC4;
+    padding: 10px;
+    padding-left: 12%;
+    padding-right: 12%;
+    position: sticky;
+}
+.maxinav{
+    background-color: #AA3763;
+    position: fixed;
+    width: 100%;
+}
+.mflex{
+    display:flex;
+    justify-content: space-between;
+}
+  
+    #container {
+    margin:0 auto;
+    max-width:890px;
+    }
+    
+    p {
+    text-align:center;
+    }
+    
+    .toggle,[id^=drop] {
+    display:none;
+    }
+    
+    nav {
+    margin:0;
+    padding:0;
+    background-color:#AA3763;
+    }
+    
+ #logo {
+   width: 20px;
+ }
+	
+	
+    
+    nav:after {
+    content:"";
+    display:table;
+    clear:both;
+    }
+    
+    nav ul {
+    /* float:right; */
+    padding:0;
+    margin:0;
+    list-style:none;
+    position:relative;
+    }
+    
+    nav ul li {
+    margin:0;
+    display:inline-block;
+    float:left;
+    background-color:#AA3763;
+    }
+    
+    nav a {
+    display:block;
+    padding:14px 20px;
+    color:#FFF;
+    font-size:17px;
+    text-decoration:none;
+    }
+    
+    nav ul li ul li:hover {
+    background:#AA3763;
+    }
+    
+    nav a:hover {
+    background-color:#AA3763;
+    }
+    
+    nav ul ul {
+    display:none;
+    position:absolute;
+    top:60px;
+    }
+    
+    nav ul li:hover > ul {
+    display:inherit;
+    }
+    
+    nav ul ul li {
+    width:170px;
+    float:none;
+    display:list-item;
+    position:relative;
+    }
+    
+    nav ul ul ul li {
+    position:relative;
+    top:-60px;
+    left:170px;
+    }
+    
+    li > a:after {
+    content:' ➤';
+    }
+    
+    li > a:only-child:after {
+    content:'';
+    }
+    
+    h3 a,a {
+    color:#FFF;
+    }
+    
+    @media all and (max-width : 768px) {
+    #logo {
+    display:block;
+    padding:0;
+    width:100%;
+    text-align:center;
+    float:none;
+    }
+    
+    nav {
+    margin:0;
+    }
+    
+    .toggle {
+    display:block;
+    background-color:#AA3763;
+    padding:14px 20px;
+    color:#FFF;
+    font-size:17px;
+    text-decoration:none;
+    border:none;
+    }
+    
+    [id^=drop]:checked + ul {
+    display:block;
+    }
+    
+    nav ul ul .toggle,nav ul ul a {
+    padding:0 40px;
+    }
+    
+    nav ul ul ul a {
+    padding:0 80px;
+    }
+    
+    nav ul li ul li .toggle,nav ul ul a,nav ul ul ul a {
+    padding:14px 20px;
+    color:#FFF;
+    font-size:17px;
+    }
+    
+    nav ul li ul li .toggle,nav ul ul a {
+    background-color:#8d3859;
+    }
+    
+    nav ul ul {
+    float:none;
+    position:static;
+    color:#fff;
+    }
+    
+    nav ul ul ul li {
+    position:static;
+    }
+    
+    .toggle + a,.menu,nav ul ul li:hover > ul,nav ul li:hover > ul {
+    display:none;
+    }
+    
+    .toggle:hover,nav a:hover,nav ul ul ul a {
+    background-color:#AA3763;
+    }
+    
+    nav ul li,nav ul ul li {
+    display:block;
+    width:100%;
+    }
+    }
+    
+    @media all and (max-width : 330px) {
+    nav ul li {
+    display:block;
+    width:94%;
+    }
+    }
+	.parent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        margin: 10px;
+        padding: 10px;
+        border:1px solid #AA3763;
+		background-color: #F6DEC4;
+        font-size:16px;
+        text-align: center;
+		width: 70%;
+        }
+		
+	.div1,.div2,.div3,.div4,.div5,.div6,.div7,.div8,.div9,.div10,.div11,.div12{
+		background-color: #AA3763;
+	color: #F6DEC4;
+	height: 65px;
+	margin-top: 5px;
+}
+		
+		.div1 { grid-area: 1 / 1 / 2 / 3; }
+		.div2 { grid-area: 1 / 3 / 2 / 6; }
+		.div3 { grid-area: 2 / 3 / 3 / 4; }
+		.div4 { grid-area: 2 / 4 / 3 / 5; }
+		.div5 { grid-area: 2 / 5 / 3 / 6; }
+		.div6 { grid-area: 3 / 3 / 4 / 6; }
+		.div7 { grid-area: 4 / 3 / 5 / 4; }
+		.div8 { grid-area: 4 / 4 / 5 / 5; }
+		.div9 { grid-area: 4 / 5 / 5 / 6; }
+		.div10 { grid-area: 5 / 3 / 6 / 4; }
+		.div11 { grid-area: 5 / 4 / 6 / 5; }
+		.div12 { grid-area: 5 / 5 / 6 / 6; }
+
+.textcolor {
+  color: #F6DEC4;
+}
+
+.navbarcolor {
+  color: #AA3763;
+}
+
+.bodycolor {
+  color: #300532
+}
+
+.bodypadding {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.center {
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flexrow {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.margin {
+	margin-left: 5%;
+}
+
+.padding-top {
+	margin-left: 10%;
+}
+
+.bgm {
+
+}
+
